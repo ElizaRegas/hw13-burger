@@ -1,7 +1,25 @@
-body {
-  background-color: red;
+html {
+  background: url(../img/burger.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
 h1 {
-  color: yellow;
+  margin: 5% 25%;
+  font-family: 'Merienda One', cursive;
+  font-size: 3em;
 }
+
+#submitButton {
+  position: absolute;
+}
+
+#textArea {
+  margin: 0% 1% 0% 25%;
+}
+
+/* font-family: 'Merienda One', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
