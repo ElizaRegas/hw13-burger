@@ -1,4 +1,3 @@
-const orm = require("./orm");
 const mysql = require("mysql");
 
 const connection = mysql.createConnection({

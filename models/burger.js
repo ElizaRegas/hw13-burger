@@ -1,9 +1,15 @@
 const orm = require("../config/orm");
 
-// orm.selectAll(" ", " ");
+const burger = {
+  selectAll: (cb) => {
+    orm.selectAll('burgers', (res) => {
+      cb(res);
+    });
+  }
+};
 
 // orm.insertOne(" ", " ");
 
 // orm.updateOne(" ", " ");
 
-module.exports = burgerJS;
+module.exports = burger;
