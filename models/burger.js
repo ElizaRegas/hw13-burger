@@ -5,10 +5,16 @@ const burger = {
     orm.selectAll('burgers', (res) => {
       cb(res);
     });
+  },
+  insertOne: (burger_name, devoured, cb) => {
+    orm.insertOne(burger_name, devoured, (res) => {
+      cb(res);
+    });
   }
 };
 
-// orm.insertOne(" ", " ");
+
+
 
 // orm.updateOne(" ", " ");
 

@@ -13,11 +13,11 @@ h1 {
   font-size: 3em;
 }
 
-#submitButton {
+.submitButton {
   position: absolute;
 }
 
-#textArea {
+.textArea {
   margin: 0% 1% 0% 25%;
 }
 
