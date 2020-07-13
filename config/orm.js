@@ -9,12 +9,9 @@ const orm = {
     });
   },
 
-  // INSERT INTO burgers (burger_name, devoured) 
-  //   VALUES ("Veggie Burger", false);
   insertOne: (burger_name, devoured, cb) => {
     console.log("orm: " + burger_name, devoured);
     let queryString = 'INSERT INTO burgers (burger_name, devoured) VALUES (?, ?);';
-    // let queryString = `INSERT INTO burgers (burger_name, devoured) VALUES (${burger_name}, ${devoured});`;
     connection.query(queryString, [burger_name, devoured], (err, res) => {
       if (err) throw err;
       cb(res);
