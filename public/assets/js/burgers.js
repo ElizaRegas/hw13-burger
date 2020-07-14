@@ -1,4 +1,4 @@
-$(() => {
+$(function() {
   $('.devour-reorder').on('click', function(event) {
     let toggleDevoured = {
       devoured: Math.abs($(this).data('devoured') - 1)
