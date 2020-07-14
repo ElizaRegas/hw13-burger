@@ -2,7 +2,8 @@ USE burgers_db;
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES
-('Bacon Blue Cheese', false),
-('Turkey Avocado', false),
-('Mushroom Swiss', false);
+('Mushroom Swiss Burger', false),
+('Black Bean Burger', false),
+('Veggie Burger', true),
+('Impossible Burger', true);
 

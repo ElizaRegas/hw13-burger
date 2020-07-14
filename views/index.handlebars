@@ -1,49 +1,43 @@
-<div class="pageBodyContainer">
-  <div class="header">
-    <h1>Burgers!</h1>
-  </div>
+<h1>Burgers!</h1>
 
-  <div class="row">
-    <div class="floatBoxes">
-      <h2 class="boxTitle">Ordered:</h2>
-      <hr>
-      {{#each burgers}}
-      {{#unless devoured}}
-      <div class="boxes">
-        <button class="devour-reorder devour" data-id="{{id}}" data-devoured="{{devoured}}">Devour</button>
-        {{burger_name}}
-
-      </div>
-      {{/unless}}
-      {{/each}}
-    </div>
-
-    <div class="floatBoxes">
-      <h2 class="boxTitle">Devoured:</h2>
-      <hr>
-      {{#each burgers}}
-      {{#if devoured}}
-      <div class="boxes">
-        <button class="devour-reorder reorder" data-id="{{id}}" data-devoured="{{devoured}}">Reorder</button>
-        {{burger_name}}
-      </div>
-      {{/if}}
-      {{/each}}
-    </div>
-
-  </div>
-
-  <div id="order">
-    <h2 class="boxTitle">Add a Burger</h2>
+<div>
+  <div class="floatBoxes">
+    <h2 class="boxTitle">Ordered</h2>
     <hr>
-    <form class="burgerForm">
-
-      <div class="form-group">
-        <label for="burger_name">Burger Name:</label>
-        <input type="text" id="burger_name" name="burger_name">
-      </div>
-
-      <button id="burgerButton" class="devour-reorder" type="submit">Add Burger</button>
-    </form>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <div class="boxes">
+      <button class="devour-reorder devour" data-id="{{id}}" data-devoured="{{devoured}}">Devour</button>
+      {{burger_name}}
+    </div>
+    {{/unless}}
+    {{/each}}
   </div>
+
+  <div class="floatBoxes">
+    <h2 class="boxTitle">Devoured</h2>
+    <hr>
+    {{#each burgers}}
+    {{#if devoured}}
+    <div class="boxes">
+      <button class="devour-reorder reorder" data-id="{{id}}" data-devoured="{{devoured}}">Reorder</button>
+      {{burger_name}}
+    </div>
+    {{/if}}
+    {{/each}}
+  </div>
+</div>
+
+<div id="order">
+  <h2 class="boxTitle">Add a Burger</h2>
+  <hr>
+  <form class="burgerForm">
+
+    <div class="form-group">
+      <label for="burger_name">Burger Name:</label>
+      <input type="text" id="burger_name" name="burger_name">
+    </div>
+
+    <button id="burgerButton" class="devour-reorder" type="submit">Add Burger</button>
+  </form>
 </div>

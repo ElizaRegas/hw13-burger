@@ -34,35 +34,6 @@ h1 {
   background-color: white;
 }
 
-.floatBoxes {
-  float: left;
-  width: 28%;
-  padding: 1%;
-  margin: 1%;
-  margin-right: 1%;
-  margin-bottom: 20px;
-  margin-left: 1%;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255,0.6);
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-.submitButton {
-  position: absolute;
-}
-
-.textArea {
-  margin: 0% 1% 0% 25%;
-}
-
-/* font-family: 'Merienda One', cursive; */
-/* font-family: 'Open Sans', sans-serif; */
-
-.reorder {
-  background-color: #d40401;
-}
-
 .devour {
   background-color: #6a0321;
 }
@@ -80,6 +51,32 @@ h1 {
 
 .devour-reorder:hover {
   box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.floatBoxes {
+  float: left;
+  width: 28%;
+  padding: 1%;
+  margin: 1%;
+  margin-right: 1%;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255,0.6);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.reorder {
+  background-color: #d40401;
+}
+
+.submitButton {
+  position: absolute;
+}
+
+.textArea {
+  margin: 0% 1% 0% 25%;
 }
 
 
