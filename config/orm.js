@@ -1,5 +1,5 @@
 const connection = require('./connection.js');
-
+// function to generate question marks from class activity
 const printQuestionMarks = (num) => {
   let arr = [];
   for (let i = 0; i < num; i++) {
@@ -7,7 +7,7 @@ const printQuestionMarks = (num) => {
   }
   return arr.toString();
 };
-
+// function to generate boilerplate query string from class activity
 const objToSql = (object) => {
   let arr = [];
   for (let key in object) {
@@ -34,7 +34,6 @@ const orm = {
     let columnNameSting = columnNames.toString();
     let questionMarks = printQuestionMarks(columnValues.length);
     let queryString = `INSERT INTO ${tableName} (${columnNameSting}) VALUES (${questionMarks});`;
-    console.log(queryString);
     connection.query(queryString, columnValues, (err, result) => {
       if (err) throw err;
       cb(result);
@@ -43,7 +42,6 @@ const orm = {
   updateOne: (tableName, objectColumnValues, condition, cb) => {
     let objectToSQL = objToSql(objectColumnValues);
     let queryString = `UPDATE ${tableName} SET ${objectToSQL} WHERE ${condition};`;
-    console.log(queryString);
     connection.query(queryString, (err, result) => {
       if (err) throw err;
       cb(result);
