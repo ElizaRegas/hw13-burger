@@ -1,15 +1,8 @@
-INSERT INTO 
-  burgers (burger_name, devoured)
-VALUES 
-  ("Mushroom Swiss", false),
-  ("Impossible Burger", false),
-  ("Black Bean Burger", false);
+USE burgers_db;
 
-SELECT 
-    id, 
-    burger_name, 
-IF 
-  (devoured, 'true', 'false') devoured
-FROM
-    burgers;
+INSERT INTO burgers (burger_name, devoured)
+VALUES
+('Bacon Blue Cheese', false),
+('Turkey Avocado', false),
+('Mushroom Swiss', false);
 

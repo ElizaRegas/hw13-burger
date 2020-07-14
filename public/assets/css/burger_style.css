@@ -1,3 +1,112 @@
-body {
-  background-color: red;
+html {
+  background: url(../img/burgerbg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: black;
+}
+
+h1 {
+  margin: 5% 25%;
+  font-family: 'Merienda One', cursive;
+  font-size: 3em;
+  text-align: center;
+  display: inline;
+  color: white;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+.boxTitle{
+  margin: 5px 0;
+  text-align: center;
+}
+
+.boxes {
+  padding: 2%;
+  margin: 2%;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.floatBoxes {
+  float: left;
+  width: 28%;
+  padding: 1%;
+  margin: 1%;
+  margin-right: 1%;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255,0.9);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.submitButton {
+  position: absolute;
+}
+
+.textArea {
+  margin: 0% 1% 0% 25%;
+}
+
+/* font-family: 'Merienda One', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+
+.reorder {
+  background-color: #d40401;
+}
+
+.devour {
+  background-color: #6a0321;
+}
+
+.devour-reorder {
+  border: 1px solid #bbbbbb;
+  color: white;
+  padding: 5px 15px;
+  margin-left: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.devourUndevour:hover {
+  box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#order {
+  clear: both;
+  width: 60%;
+  padding: 1%;
+  margin:   1%;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  text-align: center;
+  background-color: rgba(255, 255, 255,0.9);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#burger_name {
+  width: 40%;
+  max-width: 350px;
+}
+
+#burgerButton {
+  background-color: #3385ff;
+  margin: 10px 0;
+  border: 1px solid #bbbbbb;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
 }
